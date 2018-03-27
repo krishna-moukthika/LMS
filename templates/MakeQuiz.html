@@ -1,0 +1,200 @@
+<html>
+<head><title>Quizz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="keywords" content="Ultra Modern Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+  SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+  <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+  <!-- Bootstrap Core CSS -->
+  <link href="static/Instructor/css/bootstrap.css" rel='stylesheet' type='text/css' />
+  <!-- Custom CSS -->
+  <link href="static/Instructor/css/style.css" rel='stylesheet' type='text/css' />
+  <!-- font CSS -->
+  <!-- font-awesome icons -->
+  <link href="static/Instructor/css/font-awesome.css" rel="stylesheet">
+  <!-- //font-awesome icons -->
+  <!--skycons-icons-->
+  <script src="static/Instructor/js/skycons.js"></script>
+  <!--//skycons-icons-->
+
+   <!-- js-->
+  <script src="static/Instructor/js/bootstrap.js"></script>
+  <script src="static/Instructor/js/jquery-1.11.1.min.js"></script>
+  <script src="static/Instructor/js/modernizr.custom.js"></script>
+  <!-- Metis Menu -->
+  <script src="static/Instructor/js/metisMenu.min.js"></script>
+  <script src="static/Instructor/js/custom.js"></script>
+  <link href="static/Instructor/css/custom.css" rel="stylesheet">
+  <!--//Metis Menu -->
+  <link href="static/Instructor/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <div class="sticky-header header-section ">
+    <div class="header-left">
+      <!--logo -->
+      <div class="logo">
+        <a href="#"><h1>LMS</h1></a>
+      </div>
+      <!--//logo-->
+
+      <div class="clearfix"> </div>
+    </div>
+
+    <div class="clearfix"> </div>
+  </div>
+  <br><br><br><br>
+<a href = "{{url_for('InstructorHomePage')}}" ><button type = "submit" >Dashboard</button></a>
+<br>
+<center>
+
+<h1>Add questions to create Quizz</h1>
+<form method=POST action="{{ url_for('makequizz') }}">
+<label>Question1</label>
+<textarea rows = "2" cols = "100" name ="1" required></textarea>
+<br><br>
+<label>option1</label>
+<textarea rows = "1" cols ="60" name = "1a"></textarea><br>
+<label>option2</label>
+<textarea rows = "1" cols ="60" name = "1b"></textarea><br>
+<label>option3</label>
+<textarea rows = "1" cols ="60" name = "1c"></textarea><br>
+<label>option4</label>
+<textarea rows = "1" cols ="60" name = "1d"></textarea><br>
+<label>answer</label>
+<textarea rows = "1" cols ="60" name = "1ans"></textarea><br><br>
+
+<label>Question2</label>
+<textarea rows = "2" cols = "100" name = "2" required></textarea>
+<br><br>
+<label>option1</label>
+<textarea rows = "1" cols ="60" name = "2a"></textarea><br>
+<label>option2</label>
+<textarea rows = "1" cols ="60" name = "2b"></textarea><br>
+<label>option3</label>
+<textarea rows = "1" cols ="60" name = "2c"></textarea><br>
+<label>option4</label>
+<textarea rows = "1" cols ="60" name = "2d"></textarea><br>
+<label>answer</label>
+<textarea rows = "1" cols ="60" name = "2ans"></textarea><br><br>
+
+<label>Question3</label>
+<textarea rows = "2" cols = "100" name = "3" required></textarea>
+<br><br>
+<label>option1</label>
+<textarea rows = "1" cols ="60" name = "3a"></textarea><br>
+<label>option2</label>
+<textarea rows = "1" cols ="60" name = "3b"></textarea><br>
+<label>option3</label>
+<textarea rows = "1" cols ="60" name = "3c"></textarea><br>
+<label>option4</label>
+<textarea rows = "1" cols ="60" name = "3d"></textarea><br>
+<label>answer</label>
+<textarea rows = "1" cols ="60" name = "3ans"></textarea><br><br>
+
+<label>Question4</label>
+<textarea rows = "2" cols = "100" name = "4" required></textarea>
+<br><br>
+<label>option1</label>
+<textarea rows = "1" cols ="60" name = "4a"></textarea><br>
+<label>option2</label>
+<textarea rows = "1" cols ="60" name = "4b"></textarea><br>
+<label>option3</label>
+<textarea rows = "1" cols ="60" name = "4c"></textarea><br>
+<label>option4</label>
+<textarea rows = "1" cols ="60" name = "4d"></textarea><br>
+<label>answer</label>
+<textarea rows = "1" cols ="60" name = "4ans"></textarea><br><br>
+
+<label>Question5</label>
+<textarea rows = "2" cols = "100" name = "5" required></textarea>
+<br><br>
+<label>option1</label>
+<textarea rows = "1" cols ="60" name = "5a"></textarea><br>
+<label>option2</label>
+<textarea rows = "1" cols ="60" name = "5b"></textarea><br>
+<label>option3</label>
+<textarea rows = "1" cols ="60" name = "5c"></textarea><br>
+<label>option4</label>
+<textarea rows = "1" cols ="60" name = "5d"></textarea><br>
+<label>answer</label>
+<textarea rows = "1" cols ="60" name = "5ans"></textarea><br><br>
+
+<label>Question6</label>
+<textarea rows = "2" cols = "100" name = "6" required></textarea>
+<br><br>
+<label>option1</label>
+<textarea rows = "1" cols ="60" name = "6a"></textarea><br>
+<label>option2</label>
+<textarea rows = "1" cols ="60" name = "6b"></textarea><br>
+<label>option3</label>
+<textarea rows = "1" cols ="60" name = "6c"></textarea><br>
+<label>option4</label>
+<textarea rows = "1" cols ="60" name = "6d"></textarea><br>
+<label>answer</label>
+<textarea rows = "1" cols ="60" name = "6ans"></textarea><br><br>
+
+<label>Question7</label>
+<textarea rows = "2" cols = "100" name = "7" required></textarea>
+<br><br>
+<label>option1</label>
+<textarea rows = "1" cols ="60" name = "7a"></textarea><br>
+<label>option2</label>
+<textarea rows = "1" cols ="60" name = "7b"></textarea><br>
+<label>option3</label>
+<textarea rows = "1" cols ="60" name = "7c"></textarea><br>
+<label>option4</label>
+<textarea rows = "1" cols ="60" name = "7d"></textarea><br>
+<label>answer</label>
+<textarea rows = "1" cols ="60" name = "7ans"></textarea><br><br>
+
+<label>Question8</label>
+<textarea rows = "2" cols = "100" name = "8" required></textarea>
+<br><br>
+<label>option1</label>
+<textarea rows = "1" cols ="60" name = "8a"></textarea><br>
+<label>option2</label>
+<textarea rows = "1" cols ="60" name = "8b"></textarea><br>
+<label>option3</label>
+<textarea rows = "1" cols ="60" name = "8c"></textarea><br>
+<label>option4</label>
+<textarea rows = "1" cols ="60" name = "8d"></textarea><br>
+<label>answer</label>
+<textarea rows = "1" cols ="60" name = "8ans"></textarea><br><br>
+
+<label>Question9</label>
+<textarea rows = "2" cols = "100" name = "9" required></textarea>
+<br><br>
+<label>option1</label>
+<textarea rows = "1" cols ="60" name = "9a"></textarea><br>
+<label>option2</label>
+<textarea rows = "1" cols ="60" name = "9b" ></textarea><br>
+<label>option3</label>
+<textarea rows = "1" cols ="60" name = "9c"></textarea><br>
+<label>option4</label>
+<textarea rows = "1" cols ="60" name = "9d"></textarea><br>
+<label>answer</label>
+<textarea rows = "1" cols ="60" name = "9ans"></textarea><br><br>
+
+
+<label>Question10</label>
+<textarea rows = "2" cols = "100" name = "10" required></textarea>
+<br><br>
+<label>option1</label>
+<textarea rows = "1" cols ="60" name = "10a"></textarea><br>
+<label>option2</label>
+<textarea rows = "1" cols ="60" name = "10b"></textarea><br>
+<label>option3</label>
+<textarea rows = "1" cols ="60" name = "10c"></textarea><br>
+<label>option4</label>
+<textarea rows = "1" cols ="60" name = "10d"></textarea><br>
+<label>answer</label>
+<textarea rows = "1" cols ="60" name = "10ans"></textarea><br><br>
+<br><br>
+<button type="submit" class="btn btn-success" name = "makequizz">make quiz</button>
+</form>
+  <form form method=POST action="{{ url_for('UploadQuizz') }}">
+    <h3>OR</h3><br>
+    <button type="submit" class="btn btn-success" name = "Upload">Upload File</button>
+  </form>
+</body>
+</html>

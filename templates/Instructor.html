@@ -1,0 +1,39 @@
+<html>
+  <body>
+    <center><h1>Sample Instructor Page</h1></center>
+    <div class="login-form">
+       <form method=POST action="{{ url_for('course_status') }}">
+        <div class="form-submit">
+          <input type="submit" class="submit_1 btn btn-primary btn-block" value="View Student Requests">
+        </div>
+    </form>
+  </div>
+
+  <br><br>
+
+  <div class="login-form">
+     <form method=POST action="{{ url_for('course_request') }}">
+      <div class="form-submit">
+        <input type="submit" class="submit_1 btn btn-primary btn-block" value="View Accepted Students">
+      </div>
+  </form>
+</div>
+
+<div class="login-form">
+   <form method=POST action="{{ url_for('UploadQuizz') }}">
+    <div class="form-submit">
+      <input type="submit" class="submit_1 btn btn-primary btn-block" value="Prepare Quiz">
+    </div>
+</form>
+</div>
+
+<div class="login-form">
+   <form method=POST action="{{ url_for('uploadmaterial') }}">
+    <div class="form-submit">
+      <input type="submit" class="submit_1 btn btn-primary btn-block" value="Upload Material">
+    </div>
+</form>
+</div>
+
+  </body>
+</html>

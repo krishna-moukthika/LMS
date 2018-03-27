@@ -1,0 +1,357 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>LMS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Learn Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="static/courses/css/bootstrap-3.1.1.min.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="static/courses/js/jquery.min.js"></script>
+<script src="static/courses/js/bootstrap.min.js"></script>
+<!-- Custom Theme files -->
+<link href="static/courses/css/style.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="static/courses/css/jquery.countdown.css" />
+<link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.w3-btn {margin-bottom:10px;}
+</style>
+
+
+<!----font-Awesome----->
+<link href="static/courses/css/font-awesome.css" rel="stylesheet">
+<!----font-Awesome----->
+<script>
+$(document).ready(function(){
+    $(".dropdown").hover(
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
+            $(this).toggleClass('open');
+        },
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+            $(this).toggleClass('open');
+        }
+    );
+});
+</script>
+</head>
+<body>
+<nav class="navbar navbar-default" role="navigation">
+	<div class="container">
+	    <div class="navbar-header">
+	        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+	        </button>
+			<br>
+	        <a class="navbar-brand" href="index.html">LMS</a>
+	    </div>
+	    <!--/.navbar-header-->
+	    <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" style="height: 1px;">
+	        <ul class="nav navbar-nav">
+            <li class="dropdown">
+    				<br>
+    		            <a href="login.html"><span>Sush</span></a>
+    		        </li>
+    		       <li class="dropdown">
+    			   <br>
+             <a href="{{url_for('logout')}}">
+                <span class="fa fa-sign-out" aria-hidden="true"></span>Logout</a>
+    		        </li>
+			</ul>
+	    </div>
+	    <div class="clearfix"> </div>
+	  </div>
+	  <br>
+	    <!--/.navbar-collapse-->
+</nav>
+<!-- banner -->
+  <div class="courses_banner">
+  	<div class="container">
+  		<h3>Course_Detail</h3>
+  		
+        <div class="breadcrumb1">
+            <ul>
+                <li class="icon6"><a href="index.html">Home</a></li>
+                <li class="current-page"><a href="courses.html">Courses</a> with Course_detail</li>
+            </ul>
+        </div>
+  	</div>
+  </div>
+    <!-- //banner -->
+	<div class="courses_box1">
+	   <div class="container">
+	   	  <div class="col-md-3">
+			<div class="courses_box1-left">
+                <p>About the Instructor</p>
+	       </div>
+	       <div class="personBox">
+              <div class="personBox_1">
+                 <div class="person_image">
+                      <img src="static/courses/images/AndrewNg.jpg" class="img-responsive" alt=""/>
+                 </div>
+                 <div class="person_image_desc">
+                   <h1> Andrew Ng</h1>
+                   <p>Co-founder, Coursera</p>
+                </div>
+                <div class="clearfix"> </div>
+             </div>
+             <div class="person_description">
+                <p>
+                    Andrew Ng is Co-founder of Coursera, an and Adjunct Professor of Computer Science at Stanford University.His machine learning course is the MOOC that had led to the founding of Coursera!In 2011, he led the development of Stanford University’s main MOOC (Massive Open Online Courses) platform and also taught an online Machine Learning class to over 100,000 students, thus helping launch the MOOC movement and also leading to the founding of Coursera.Ng also works on machine learning, with an emphasis on deep learning. He had founded and led the “Google Brain” project, which developed massive-scale deep learning algorithms. This resulted in the famous “Google cat” result, in which a massive neural network with 1 billion parameters learned from unlabeled YouTube videos to detect cats. Until recently, he led Baidu's ~1300 person AI Group, which developed technologies in deep learning, speech, computer vision, NLP, and other areas.
+                </p>
+             </div>
+          </div>
+          <div class="social-widget">
+          	<h2>Connect with us</h2>
+          	  <ul class="courses_social">
+				<li class="facebook-icon">
+					<div>
+						<a href="#" class="fa fa-facebook"></a>
+						<p>2154</p>
+					</div>
+				</li>
+				<li class="twitter-icon">
+					<div>
+						<a href="#" class="fa fa-twitter"></a>
+						<p>1425</p>
+					</div>
+				</li>
+				<li class="gplus-icon">
+					<div>
+						<a href="#" class="fa fa-google-plus"></a>
+						<p>2150</p>
+					</div>
+				</li>
+				<div class="clearfix"> </div>
+			 </ul>
+           </div>
+           <section class="slider">
+            	<h3>Testimonial</h3>
+				<div class="flexslider">
+					<ul class="slides">
+						<li>
+							<div class="banner-info1">
+							   <p>Supervised learning (parametric/non-parametric algorithms, support vector machines, kernels, neural networks).</p>
+							</div>
+						</li>
+						<li>
+							<div class="banner-info1">
+							   <p>Unsupervised learning (clustering, dimensionality reduction, recommender systems, deep learning).</p>
+							</div>
+						</li>
+						<li>
+							<div class="banner-info1">
+							   <p> Best practices in machine learning (bias/variance theory; innovation process in machine learning and AI).</p>
+							</div>
+						</li>
+				    </ul>
+				 </div>
+	      </section>
+
+
+		</div>
+		<div class="col-md-9 detail">
+			<img src="static/courses/images/Machine-Learning.jpg" class="img-responsive" alt=""/>
+			<h3>Course Overview</h3>
+			<p>"Machine learning is the science of getting computers to act without being explicitly programmed. In the past decade, machine learning has given us self-driving cars, practical speech recognition, effective web search, and a vastly improved understanding of the human genome. Machine learning is so pervasive today that you probably use it dozens of times a day without knowing it. Many researchers also think it is the best way to make progress towards human-level AI. In this class, you will learn about the most effective machine learning techniques, and gain practice implementing them and getting them to work for yourself. More importantly, you'll learn about not only the theoretical underpinnings of learning, but also gain the practical know-how needed to quickly and powerfully apply these techniques to new problems. Finally, you'll learn about some of Silicon Valley's best practices in innovation as it pertains to machine learning and AI.</p>
+			<br><br><br><br>
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title">
+                               <i class="fa fa-bookmark-o icon_3"></i>WEEK 1
+                        </h4>
+                    </div>
+                        <div class="panel-body">
+                            <h3>Introduction</h3>
+							<p>Welcome to Machine Learning! In this module, we introduce the core idea of teaching a computer to learn concepts using data—without being explicitly programmed. The Course Wiki is under construction. Please visit the resources tab for the most complete and up-to-date information.</p>
+
+							<h3>Linear Regression with One Variable</h3>
+							<p>Linear regression predicts a real-valued output based on an input value. We discuss the application of linear regression to housing price prediction, present the notion of a cost function, and introduce the gradient descent method for learning.<p>
+
+							<h3>Linear Algebra Review</h3>
+							<p>This optional module provides a refresher on linear algebra concepts. Basic understanding of linear algebra is necessary for the rest of the course, especially as we begin to cover models with multiple variables.</p>
+                        </div>
+                        <form id="upload-form" action="{{ url_for('returnfilevideo') }}" method="POST" enctype="multipart/form-data">
+                            <button class="w3-button w3-blue w3-border w3-round-large">Watch Video</button>
+                        </form><br>
+                        <form id="upload-form" action="{{ url_for('returnfilematerial') }}" method="POST" enctype="multipart/form-data">
+                            <button class="w3-button w3-blue w3-border w3-round-large">Download Material</button>
+                        </form><br>
+                        <form id="upload-form" action="{{ url_for('tq1') }}" method="POST" enctype="multipart/form-data">
+                            <button class="w3-button w3-blue w3-border w3-round-large">Take quiz 1</button>
+                        </form><br>
+                        <form id="upload-form" action="{{ url_for('tq2') }}" method="POST" enctype="multipart/form-data">
+                            <button class="w3-button w3-blue w3-border w3-round-large">Take quiz 2</button>
+                        </form><br>
+
+                    </div>
+
+
+                <br><br>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+                                <i class="fa fa-pencil-square-o icon_3"></i> WEEK 2
+                        </h4>
+                    </div>
+                        <div class="panel-body">
+                            <h3>Linear Regression with Multiple Variables</h3>
+							<p>What if your input has more than one value? In this module, we show how linear regression can be extended to accommodate multiple input features. We also discuss best practices for implementing linear regression.</p>
+
+							<h3>Octave/Matlab Tutorial</h3>
+							<p>This course includes programming assignments designed to help you understand how to implement the learning algorithms in practice. To complete the programming assignments, you will need to use Octave or MATLAB. This module introduces Octave/Matlab and shows you how to submit an assignment.</p>
+                        </div>
+                        <form id="upload-form" action="{{ url_for('returnfilevideo') }}" method="POST" enctype="multipart/form-data">
+                            <button class="w3-button w3-blue w3-border w3-round-large">Watch Video</button>
+                        </form><br>
+                        <form id="upload-form" action="{{ url_for('returnfilematerial') }}" method="POST" enctype="multipart/form-data">
+                            <button class="w3-button w3-blue w3-border w3-round-large">Download Material</button>
+                        </form><br>
+                        <form id="upload-form" action="{{ url_for('tq1') }}" method="POST" enctype="multipart/form-data">
+                            <button class="w3-button w3-blue w3-border w3-round-large">Take quiz 1</button>
+                        </form><br>
+                        <form id="upload-form" action="{{ url_for('tq2') }}" method="POST" enctype="multipart/form-data">
+                            <button class="w3-button w3-blue w3-border w3-round-large">Take quiz 2</button>
+                        </form><br>
+                    </div>
+
+                    <br><br>
+
+                    <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                        <h4 class="panel-title">
+                            <i class="fa fa-comments-o icon_3"></i> WEEK 3
+                        </h4>
+                    </div>
+                        <div class="panel-body">
+                            <h3>Logistic Regression</h3>
+							<p>Logistic regression is a method for classifying data into discrete outcomes. For example, we might use logistic regression to classify an email as spam or not spam. In this module, we introduce the notion of classification, the cost function for logistic regression, and the application of logistic regression to multi-class classification.</p>
+							<h3>Regularization</h3>
+							<p>Machine learning models need to generalize well to new examples that the model has not seen in practice. In this module, we introduce regularization, which helps prevent models from overfitting the training data.</p>
+                        </div>
+                        <form id="upload-form" action="{{ url_for('returnfilevideo') }}" method="POST" enctype="multipart/form-data">
+                            <button class="w3-button w3-blue w3-border w3-round-large">Watch Video</button>
+                        </form><br>
+                        <form id="upload-form" action="{{ url_for('returnfilematerial') }}" method="POST" enctype="multipart/form-data">
+                            <button class="w3-button w3-blue w3-border w3-round-large">Download Material</button>
+                        </form><br>
+                        <form id="upload-form" action="{{ url_for('tq1') }}" method="POST" enctype="multipart/form-data">
+                            <button class="w3-button w3-blue w3-border w3-round-large">Take quiz 1</button>
+                        </form><br>
+                        <form id="upload-form" action="{{ url_for('tq2') }}" method="POST" enctype="multipart/form-data">
+                            <button class="w3-button w3-blue w3-border w3-round-large">Take quiz 2</button>
+                        </form><br>
+                    </div>
+                    <br> <br>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingFour">
+                        <h4 class="panel-title">
+                                <i class="fa fa-clock-o icon_3"></i> WEEK 4
+                        </h4>
+                    </div>
+                        <div class="panel-body">
+                            <h3>Neural Networks: Representation</h3>
+							<p>Neural networks is a model inspired by how the brain works. It is widely used today in many applications: when your phone interprets and understand your voice commands, it is likely that a neural network is helping to understand your speech; when you cash a check, the machines that automatically read the digits also use neural networks.</p>
+							<h3>Neural Networks: Learning</h3>
+							<p>In this module, we introduce the backpropagation algorithm that is used to help learn parameters for a neural network. At the end of this module, you will be implementing your own neural network for digit recognition.</p>
+                        </div>
+                        <form id="upload-form" action="{{ url_for('returnfilevideo') }}" method="POST" enctype="multipart/form-data">
+                            <button class="w3-button w3-blue w3-border w3-round-large">Watch Video</button>
+                        </form><br>
+                        <form id="upload-form" action="{{ url_for('returnfilematerial') }}" method="POST" enctype="multipart/form-data">
+                            <button class="w3-button w3-blue w3-border w3-round-large">Download Material</button>
+                        </form><br>
+                        <form id="upload-form" action="{{ url_for('tq1') }}" method="POST" enctype="multipart/form-data">
+                            <button class="w3-button w3-blue w3-border w3-round-large">Take quiz 1</button>
+                        </form><br>
+                        <form id="upload-form" action="{{ url_for('tq2') }}" method="POST" enctype="multipart/form-data">
+                            <button class="w3-button w3-blue w3-border w3-round-large">Take quiz 2</button>
+                        </form><br>
+                    </div>
+
+              </div>
+			<br><br>
+			 </div>
+       <center>
+       <form id="upload-form" action="{{ url_for('progress') }}" method="POST" enctype="multipart/form-data">
+           <button class="w3-button w3-blue w3-border w3-round-large">View Your Progress</button>
+       </form><br>
+     </center>
+		  </div>
+		  <div class="clearfix"> </div>
+	   </div>
+	</div>
+    <div class="mkl_footer">
+		<div class="sub-footer">
+			<div class="container">
+				<div class="mkls_footer_grid">
+					<div class="col-xs-4 mkls_footer_grid_left">
+						<h4>Location:</h4>
+						<p><br> Hyderabad, India</p>
+					</div>
+					<div class="col-xs-4 mkls_footer_grid_left">
+						<h4>Mail Us:</h4>
+						<p>
+							<span>Phone : </span>001 234 5678</p>
+						<p>
+							<span>Email : </span>
+							<a href="mailto:info@example.com">lmsdjango@gmail.com</a>
+						</p>
+					</div>
+					<div class="col-xs-4 mkls_footer_grid_left">
+						<h4>Opening Hours:</h4>
+						<p>Working days : 8am-10pm</p>
+						<p>Sunday
+							<span>9am-2pm</span>
+						</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="botttom-nav-allah">
+					<ul>
+						<li>
+							<a href="{{url_for('index')}}">Home</a>
+						</li>
+						<li>
+							<a href=""></a>
+						</li>
+						<li>
+							<a href="{{url_for('courses')}}">Courses</a>
+						</li>
+						<li>
+						</li>
+						<li>
+							<a href="{{url_for('register')}}">Join Us</a>
+						</li>
+            <a href=""></a>
+					</ul>
+				</div>
+<!-- FlexSlider -->
+<link href="static/courses/css/flexslider.css" rel='stylesheet' type='text/css' />
+  <script defer src="static/courses/js/jquery.flexslider.js"></script>
+  <script type="text/javascript">
+	$(function(){
+	  SyntaxHighlighter.all();
+	});
+	$(window).load(function(){
+	  $('.flexslider').flexslider({
+		animation: "slide",
+		start: function(slider){
+		  $('body').removeClass('loading');
+		}
+	  });
+	});
+  </script>
+<!-- FlexSlider -->
+</body>
+</html>

@@ -1,0 +1,70 @@
+<html>
+<head><title>final </title></head>
+
+<body>
+  <form method=POST action="{{ url_for('sendquizz') }}">
+  <h3>1 :  <strong>{{ q['Q1']}}</strong></h3>
+  <input type="radio" name="option" value="{{ q['1a']}}"> {{ q['1a']}}<br>
+  <input type="radio" name="option" value="{{ q['1b']}}"> {{ q['1b']}}<br>
+  <input type="radio" name="option" value="{{ q['1c']}}"> {{ q['1c']}} <br>
+  <input type="radio" name="option" value="{{ q['1d']}}"> {{ q['1d']}} <br>
+
+  <h3>  2 :  <strong>{{ q['Q2']}}</strong></h3>
+  <input type="radio" name="option" value="{{ q['2a']}}"> {{ q['2b']}}<br>
+  <input type="radio" name="option" value="{{ q['2b']}}"> {{ q['2b']}}<br>
+  <input type="radio" name="option" value="{{ q['2c']}}"> {{ q['2c']}} <br>
+  <input type="radio" name="option" value="{{ q['2d']}}"> {{ q['2d']}} <br>
+
+  <h3>  3 :  <strong>{{ q['Q3']}}</strong></h3>
+  <input type="radio" name="option" value="{{ q['3a']}}"> {{ q['3a']}}<br>
+  <input type="radio" name="option" value="{{ q['3b']}}"> {{ q['3b']}}<br>
+  <input type="radio" name="option" value="{{ q['3c']}}"> {{ q['3c']}} <br>
+  <input type="radio" name="option" value="{{ q['3d']}}"> {{ q['3d']}} <br>
+
+  <h3>  4 :  <strong>{{ q['Q4']}}</strong></h3>
+  <input type="radio" name="option" value="{{ q['4a']}}"> {{ q['4a']}}<br>
+  <input type="radio" name="option" value="{{ q['4b']}}"> {{ q['4b']}}<br>
+  <input type="radio" name="option" value="{{ q['4c']}}"> {{ q['4c']}} <br>
+  <input type="radio" name="option" value="{{ q['4d']}}"> {{ q['4d']}} <br>
+
+  <h3>  5 :  <strong>{{ q['Q5']}}</strong></h3>
+  <input type="radio" name="option" value="{{ q['5a']}}"> {{ q['5a']}}<br>
+  <input type="radio" name="option" value="{{ q['5b']}}"> {{ q['5b']}}<br>
+  <input type="radio" name="option" value="{{ q['5c']}}"> {{ q['5c']}} <br>
+  <input type="radio" name="option" value="{{ q['5d']}}"> {{ q['5d']}} <br>
+
+  <h3>  6 :  <strong>{{ q['Q6']}}</strong></h3>
+  <input type="radio" name="option" value="{{ q['6a']}}"> {{ q['6a']}}<br>
+  <input type="radio" name="option" value="{{ q['6b']}}"> {{ q['6b']}}<br>
+  <input type="radio" name="option" value="{{ q['6c']}}"> {{ q['6c']}} <br>
+  <input type="radio" name="option" value="{{ q['6d']}}"> {{ q['6d']}} <br>
+
+  <h3>  7 :  <strong>{{ q['Q7']}}</strong></h3>
+  <input type="radio" name="option" value="{{ q['7a']}}"> {{ q['7a']}}<br>
+  <input type="radio" name="option" value="{{ q['7b']}}"> {{ q['7b']}}<br>
+  <input type="radio" name="option" value="{{ q['7c']}}"> {{ q['7c']}} <br>
+  <input type="radio" name="option" value="{{ q['7d']}}"> {{ q['7d']}} <br>
+
+  <h3>  8 :  <strong>{{ q['Q8']}}</strong></h3>
+  <input type="radio" name="option" value="{{ q['8a']}}"> {{ q['8a']}}<br>
+  <input type="radio" name="option" value="{{ q['8b']}}"> {{ q['8b']}}<br>
+  <input type="radio" name="option" value="{{ q['8c']}}"> {{ q['8c']}} <br>
+  <input type="radio" name="option" value="{{ q['8d']}}"> {{ q['8d']}} <br>
+
+  <h3>  9 :  <strong>{{ q['Q9']}}</strong></h3>
+  <input type="radio" name="option" value="{{ q['9a']}}"> {{ q['9a']}}<br>
+  <input type="radio" name="option" value="{{ q['9b']}}"> {{ q['9b']}}<br>
+  <input type="radio" name="option" value="{{ q['9c']}}"> {{ q['9c']}} <br>
+  <input type="radio" name="option" value="{{ q['9d']}}"> {{ q['9d']}} <br>
+
+  <h3>  10 :  <strong>{{ q['Q10']}}</strong></h3>
+  <input type="radio" name="option" value="{{ q['10a']}}"> {{ q['10a']}}<br>
+  <input type="radio" name="option" value="{{ q['10b']}}"> {{ q['10b']}}<br>
+  <input type="radio" name="option" value="{{ q['10c']}}"> {{ q['10c']}} <br>
+  <input type="radio" name="option" value="{{ q['10d']}}"> {{ q['10d']}} <br>
+
+  <button type = "submit" name ="sendquizz">send quizz</button>
+
+</form>
+</body>
+</html>

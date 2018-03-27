@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Instructor Homepage</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Ultra Modern Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Bootstrap Core CSS -->
+<link href="static/Instructor/css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- Custom CSS -->
+<link href="static/Instructor/css/style.css" rel='stylesheet' type='text/css' />
+<!-- font CSS -->
+<!-- font-awesome icons -->
+<link href="static/Instructor/css/font-awesome.css" rel="stylesheet">
+<!-- //font-awesome icons -->
+<!--skycons-icons-->
+<script src="static/Instructor/js/skycons.js"></script>
+<!--//skycons-icons-->
+
+ <!-- js-->
+<script src="static/Instructor/js/bootstrap.js"></script>
+<script src="static/Instructor/js/jquery-1.11.1.min.js"></script>
+<script src="static/Instructor/js/modernizr.custom.js"></script>
+<!-- Metis Menu -->
+<script src="static/Instructor/js/metisMenu.min.js"></script>
+<script src="static/Instructor/js/custom.js"></script>
+<link href="static/Instructor/css/custom.css" rel="stylesheet">
+<!--//Metis Menu -->
+<link href="static/Instructor/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
+</head>
+<body class="cbp-spmenu-push">
+	<div class="main-content">
+		<!--left-fixed -navigation-->
+		<div class="sidebar" role="navigation">
+            <div class="navbar-collapse">
+				<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right dev-page-sidebar mCustomScrollbar _mCS_1 mCS-autoHide mCS_no_scrollbar" id="cbp-spmenu-s1">
+					<div class="scrollbar scrollbar1">
+						<ul class="nav" id="side-menu">
+						<br><br>
+							<li>
+								<a href="{{url_for('InstructorHomePage')}}" class="active"><i class="fa fa-home nav_icon"></i>Dashboard</a>
+							</li>
+							<li>
+								<a href="#"><i class="fa fa-th-large nav_icon"></i>Profile</a>
+							</li>
+
+
+							<li>
+								<a href="{{url_for('logout')}}" ><i class="fa fa-location-arrow nav_icon"></i>Logout</a>
+							</li>
+
+						</ul>
+					</div>
+					<!-- //sidebar-collapse -->
+				</nav>
+			</div>
+		</div>
+		<!--left-fixed -navigation-->
+		<!-- header-starts -->
+		<div class="sticky-header header-section ">
+			<div class="header-left">
+				<!--logo -->
+				<div class="logo">
+					<a href="#"><h1>LMS</h1></a>
+				</div>
+				<!--//logo-->
+
+				<div class="clearfix"> </div>
+			</div>
+			<div class="header-right">
+					<!--toggle button start-->
+					<div class="search-box">
+					<form class="input">
+						<input class="sb-search-input input__field--madoka" placeholder="Search..." type="search" id="input-31">
+					</form>
+				</div>
+				<button id="showLeftPush"><i class="fa fa-bars"></i></button>
+				<div class="clearfix"> </div>
+				<!--toggle button end-->
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+
+<br><br><br><br><br><br><br><br>
+  <center><form id="upload-form" action="{{ url_for('uploadv') }}" method="POST" enctype="multipart/form-data">
+  <input type="file" name="file" accept="image/*" multiple>
+
+  <!--  <input type="submit" class = "value="Send"> -->
+  <br><br>
+    <button type="submit" class="btn btn-success" name = "Send">Send</button>
+</form>
+<script src="static/Instructor/js/classie.js"></script>
+<script>
+  var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+    showLeftPush = document.getElementById( 'showLeftPush' ),
+    body = document.body;
+
+  showLeftPush.onclick = function() {
+    classie.toggle( this, 'active' );
+    classie.toggle( body, 'cbp-spmenu-push-toright' );
+    classie.toggle( menuLeft, 'cbp-spmenu-open' );
+    disableOther( 'showLeftPush' );
+  };
+
+
+  function disableOther( button ) {
+    if( button !== 'showLeftPush' ) {
+      classie.toggle( showLeftPush, 'disabled' );
+    }
+  }
+</script>
+<!-- Bootstrap Core JavaScript -->
+
+<script type="text/javascript" src="static/Instructor/js/bootstrap.min.js"></script>
+<!--scrolling js-->
+<script src="static/Instructor/js/jquery.nicescroll.js"></script>
+<script src="static/Instructor/js/scripts.js"></script>
+<link href="static/Instructor/css/bootstrap.min.css" rel="stylesheet">
+
+<!--//scrolling js-->
+
+</body>
+
+</html>
